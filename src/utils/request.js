@@ -46,7 +46,7 @@ service.interceptors.request.use(function (config) {
   // if (['HTTP', 'HTTPS'].includes(proxy.protocol)) {
   //   config.params.proxy = `${proxy.protocol}://${proxy.server}:${proxy.port}`;
   // }
-  config.params.proxy = 'http://unblock.hohoo.fun:8280/proxy.pac';
+  config.params.proxy = 'https://unblock.hohoo.fun:8281/proxy.pac';
   return config;
 });
 
