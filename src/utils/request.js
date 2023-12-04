@@ -42,10 +42,11 @@ service.interceptors.request.use(function (config) {
     config.params.realIP = process.env.VUE_APP_REAL_IP;
   }
 
-  const proxy = JSON.parse(localStorage.getItem('settings')).proxyConfig;
-  if (['HTTP', 'HTTPS'].includes(proxy.protocol)) {
-    config.params.proxy = `${proxy.protocol}://${proxy.server}:${proxy.port}`;
-  }
+  // const proxy = JSON.parse(localStorage.getItem('settings')).proxyConfig;
+  // if (['HTTP', 'HTTPS'].includes(proxy.protocol)) {
+  //   config.params.proxy = `${proxy.protocol}://${proxy.server}:${proxy.port}`;
+  // }
+  config.params.proxy = 'http://unblock.hohoo.fun:8280/proxy.pac';
   return config;
 });
 
