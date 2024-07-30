@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:match*",
-      "destination": "https://musicapp.hohoo.fun/:match*"
+      "destination": "https://musicapi.hohoo.fun/:match*"
     }
   ]
 }
